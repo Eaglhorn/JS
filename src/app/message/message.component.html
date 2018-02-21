@@ -1,0 +1,37 @@
+
+<div class="messageContainer"
+     *ngFor="let message of messages | async"
+
+>
+
+  <div class="messageContent"
+       [ngClass]="{ 'from': message.sentBy === 'bot' ,
+'to':   message.sentBy === 'user' }"
+  >
+
+   {{ message.content }}
+  </div>
+</div>
+
+<!--  <div class="messageData"
+       [ngClass]="{'isOwnMessageData':isOwnMessage}">
+        <span class="sender"
+              [ngClass]="{'isOwnSender':isOwnMessage}">
+            {{ userName }}
+        </span>
+    <span class="timestamp"
+          [ngClass] = "{'isOwnTimestamp':isOwnMessage}">
+            {{ timeStamp | date:'medium' }}
+        </span>
+  </div>-->
+
+
+
+<!--
+
+      *ngFor="let message of messages | async"
+
+
+[ngClass]="{ 'from': message.sentBy === 'bot',
+'to':   message.sentBy === 'user' }">
+{{ message.content }}-->

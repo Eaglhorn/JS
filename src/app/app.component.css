@@ -1,0 +1,11 @@
+
+
+.chatRoom {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+router-outlet {
+  height:0;
+}
